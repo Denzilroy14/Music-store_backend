@@ -11,7 +11,7 @@ from flask_cors import CORS
 from werkzeug.security import generate_password_hash,check_password_hash
 
 app=Flask(__name__)
-CORS(app,supports_credentials=True,origins=['http://localhost:3000'])
+CORS(app,supports_credentials=True,origins=['*'])
 
 #database and configuration
 app.config['SECRET_KEY']='ITS_ME_HERE@COOL-BUDDY'
